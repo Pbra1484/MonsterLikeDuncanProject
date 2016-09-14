@@ -17,6 +17,13 @@ public class MonsterController
 	{
 		System.out.println("We made monsters!");
 		System.out.println("Here is mine" + firstMonster);
+		System.out.println("It has " + firstMonster.getHeadTenticalCount() + " tenticals on its head");
+		System.out.println("It has " + firstMonster.getAntennaCount() + " antena");
+		System.out.println("It has " + firstMonster.getEyeCount() + " eyes");
+		System.out.println("It has " + firstMonster.getLegCount() + " legs");
+		System.out.println("It has a neck " + firstMonster.getHasNeck());
+		System.out.println("It has a mouth " + firstMonster.getHasMouth());
+		
 	}
 	
 	

@@ -3,7 +3,7 @@ package monster.model;
 public class MarshmallowMonster
 {
 	private String name;
-	private double headTenticalCount;
+	private int headTenticalCount;
 	private double antennaCount;
 	private int eyeCount;
 	private int legCount;
@@ -23,7 +23,7 @@ public class MarshmallowMonster
 		
 	}
 	
-	public MarshmallowMonster(String name, double headTenticalCount, double antennaCount, int eyeCount, int legCount, boolean hasNeck, boolean hasMouth)
+	public MarshmallowMonster(String name, int headTenticalCount, double antennaCount, int eyeCount, int legCount, boolean hasNeck, boolean hasMouth)
 	{
 		this.name = name;
 		this.headTenticalCount = headTenticalCount;
@@ -32,9 +32,48 @@ public class MarshmallowMonster
 		this.legCount = legCount;
 		this.hasNeck = hasNeck;
 		this.hasMouth = hasMouth;
-		
-		
 	}
+		
+	public String toString()
+	{
+		String description = "Monster says: Name is " + name;
+			
+		return description;
+			
+	}
+	public String getName()
+	{
+		return name;
+	}
+		
+	public int getHeadTenticalCount()
+	{
+		return headTenticalCount;
+	}
+	public double getAntennaCount()
+	{
+		return antennaCount;
+	}
+	public int getEyeCount()
+	{
+		return eyeCount;
+	}
+	public int getLegCount()
+	{
+		return legCount;
+	}
+	public boolean getHasNeck()
+	{
+		return hasNeck;
+	}
+	public boolean getHasMouth()
+	{
+		return hasMouth;
+	}
+	
+
+	
+	
 	/*
 	 * monster name is duncical
 	 * has 5 head tenticals
