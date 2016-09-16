@@ -22,7 +22,21 @@ public class MonsterController
 		System.out.println("We made monsters!");
 		System.out.println("Here is mine" + firstMonster);
 		
-		System.out.println("Do you want to change name");
+		System.out.println("Do you want to change the name");
+		String answer = keyboardInput.nextLine();
+		
+		if (answer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("What do you want the name to be?");
+			String newName = keyboardInput.nextLine();
+			firstMonster.setName(newName);
+			System.out.println(firstMonster);
+			
+		}
+		else
+		{
+			System.out.println("The name was kept")
+		}
 		
 		System.out.println("It has " + firstMonster.getHeadTenticalCount() + " tenticals on its head");
 		System.out.println("It has " + firstMonster.getAntennaCount() + " antena");
