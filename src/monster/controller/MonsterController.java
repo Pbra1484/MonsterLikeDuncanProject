@@ -35,11 +35,40 @@ public class MonsterController
 		}
 		else
 		{
-			System.out.println("The name was kept")
+			System.out.println("The name was kept");
 		}
 		
 		System.out.println("It has " + firstMonster.getHeadTenticalCount() + " tenticals on its head");
+		
+		System.out.println("Do you want to change the number of tenticals?");
+		answer = keyboardInput.nextLine();
+		if(answer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("How many do  you want?");
+			int newNumber = keyboardInput.nextInt();
+			firstMonster.setHeadTenticalCount(newNumber);
+			System.out.println(firstMonster.getHeadTenticalCount());
+			keyboardInput.nextLine();
+			
+		}
+		else
+		{
+			System.out.println("It will remain unchanged");
+		}
+		
+		
 		System.out.println("It has " + firstMonster.getAntennaCount() + " antena");
+		
+		System.out.println("Do you want to change the antenna count?");
+		answer = keyboardInput.nextLine();
+		if(answer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("What do you want the new count to be?");
+			double newDouble = keyboardInput.nextDouble();
+			firstMonster.setAntennaCount(newDouble);
+			System.out.println(firstMonster.getAntennaCount());
+		}
+		
 		System.out.println("It has " + firstMonster.getEyeCount() + " eyes");
 		System.out.println("It has " + firstMonster.getLegCount() + " legs");
 		System.out.println("It has a neck " + firstMonster.getHasNeck());
