@@ -1,15 +1,19 @@
 package monster.controller;
 
 import monster.model.MarshmallowMonster;
+import java.util.Scanner;
 
 public class MonsterController 
 {
 	private MarshmallowMonster firstMonster;
+	private Scanner keyboardInput;
 	
 	
 	public MonsterController()
 	{
 		firstMonster = new MarshmallowMonster("Duncical", 5, 1.5, 2, 4, true, true);
+		keyboardInput = new Scanner(System.in);
+		
 	}
 	
 	
@@ -17,6 +21,9 @@ public class MonsterController
 	{
 		System.out.println("We made monsters!");
 		System.out.println("Here is mine" + firstMonster);
+		
+		System.out.println("Do you want to change name");
+		
 		System.out.println("It has " + firstMonster.getHeadTenticalCount() + " tenticals on its head");
 		System.out.println("It has " + firstMonster.getAntennaCount() + " antena");
 		System.out.println("It has " + firstMonster.getEyeCount() + " eyes");
@@ -27,13 +34,4 @@ public class MonsterController
 	}
 	
 	
-	/*
-	 * monster name is duncical
-	 * has 5 head tenticals
-	 * has 1.5 antena
-	 * has 2 eyes
-	 * has 4 legs
-	 * has neck
-	 * has mouth
-	 */
 }

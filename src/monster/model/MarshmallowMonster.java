@@ -71,16 +71,37 @@ public class MarshmallowMonster
 		return hasMouth;
 	}
 	
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setHeadTenticalCount(int headTenticalCount)
+	{
+		this.headTenticalCount = headTenticalCount;
+	}
+	public void setAntennaCount(double antennaCount)
+	{
+		this.antennaCount = antennaCount;
+	}
+	public void setEyeCount(int eyeCount)
+	{
+		this.eyeCount = eyeCount;
+	}
+	public void setLegCount(int legCount)
+	{
+		this.legCount = legCount;
+	}
+	public void setHasNeck(boolean hasNeck)
+	{
+		this.hasNeck = hasNeck;
+	}
+	public void setHasMouth(boolean hasMouth)
+	{
+		this.hasMouth = hasMouth;
+	}
+	
+	
 
-	
-	
-	/*
-	 * monster name is duncical
-	 * has 5 head tenticals
-	 * has 1.5 antena
-	 * has 2 eyes
-	 * has 4 legs
-	 * has neck
-	 * has mouth
-	 */
 }
